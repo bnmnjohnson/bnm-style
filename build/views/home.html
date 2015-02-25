@@ -1,0 +1,56 @@
+<h1> Welcome to JEAN</h1>
+<p>Jean combines jquery, express, angular and node to automate and compile simple web projects.</p>
+<p>Gulp has been configured to automate and compile your /build folder to /public.</p>
+<br/>
+<hr/>
+<br/>
+<h2> Libraries </h2>
+<p>This boilerplate comes with more than just denim, we've added a few common libraries to help get started:</p>
+<p>
+<ul>
+	<li><pre>Angular-Touch</pre></li>
+	<li><pre>Angular-Animate</pre></li>
+	<li><pre>Angular-Route</pre></li>
+	<li><pre>Angular-$templateCache</pre></li>
+	<li><pre>Angular-Masonry</pre></li>
+	<li><pre>Angular-Images-Loaded</pre></li>
+	</ul>
+</p><br/>
+<p>See the github pages for these libraries for usage instructions </p>
+
+<br/>
+<hr/>
+<br/>
+
+
+
+<h2>Routes / Views</h2>
+<p>Angular uses templates to dynamically load in content pages. In JEAN, Angular-Route has been setup to use the $templateCache so your views will load instantaniously. <br/>Just be sure to compile the views folder using gulp.</p>
+<br/>
+<hr/>
+<br/>
+
+<h2>Styles</h2>
+<p> There is a stylesheet.scss and three partial files are set up with limitted styles pre-defined. <br/>Add a css framework or define your own styles to get the site looking snazzy.</p>
+<br/>
+<hr/>
+<br/>
+
+<h2>Folder Structure</h2>
+<p> There's only really one folder you need to modify which is <span class="pre">./build</span>. Gulp automates based on the contents of this folder. <br/> However, it's important to note each sub-folder has specific tasks:</p><br/>
+<ul>
+	<li>ASSETS: <pre>&#9;</pre> 	The whole folder is moved to <pre>./public/src/assets/</pre></li>
+	<li>HTML: <pre>&#9;</pre> 		<pre>.html</pre> files will be moved to the root of <pre>./pubilc</pre>. Keep this reserved for <pre>index.html</pre> and <pre>error.html</pre></li>
+	<li>JS: <pre>&#9;</pre> 		Moves <pre>data.js</pre>, <pre>angular-app.js</pre>, and <pre>templateCache.js</pre> to <pre>./public/src/js/</pre>. Additional files will need to be added to gulp's streamqueue.</li>
+	<li>SCSS: <pre>&#9;</pre> 		Compiles <pre>.scss</pre> files and moves them to <pre>./public/src/css/</pre></li>
+	<li>VIEWS: <pre>&#9;</pre> 		Compiles <pre>.html</pre> files into a template file and moves it to <pre>./build/js/temp/templateCache.js</pre></li>
+</ul>
+<br/>
+<hr/>
+<br/>
+
+<h2>Data.js</h2>
+<p> There is a file called <span class="pre">data.js</span> that acts as a JSON sandbox. Add objects or datasets in here and call them using <span class="pre">$scope.data</span> in Angular.</p>
+<br/>
+<hr/>
+<br/>
